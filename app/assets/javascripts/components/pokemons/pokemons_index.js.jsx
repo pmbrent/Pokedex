@@ -21,7 +21,7 @@ window.PokemonsIndex = React.createClass({
     return (<div>
       {
         this.state.pokemon.map(function(pokemon) {
-          return <PokemonIndexItem pokemon={pokemon} key={pokemon.name}/>;
+          return <PokemonIndexItem pokemon={pokemon} key={pokemon.id}/>;
         })
       }
     </div>);

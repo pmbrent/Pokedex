@@ -1,7 +1,15 @@
 (function () {
   $(document).ready(function () {
 
-    React.render(<PokemonsIndex />, document.getElementById("pokedex"));
+    var Router = ReactRouter.Router;
+    var Route = ReactRouter.Route;
+
+    React.render(
+      <Router>
+        <Route path="/" component={Index} />
+      </Router>,
+      document.getElementById('pokedex')
+    );
 
   });
 })();
