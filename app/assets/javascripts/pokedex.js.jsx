@@ -6,7 +6,10 @@
 
     React.render(
       <Router>
-        <Route path="/" component={Index} />
+        <Route path="/" component={Index}>
+          <Route path="pokemon/:pokemonId" component={PokemonDetail} />
+          // <Route path="pokemon/:pokemonId/toys/:toyId" component={ToyDetail} />
+        </Route>
       </Router>,
       document.getElementById('pokedex')
     );
