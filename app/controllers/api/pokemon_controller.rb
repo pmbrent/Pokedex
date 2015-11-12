@@ -16,7 +16,7 @@ class Api::PokemonController < ApplicationController
   end
 
   def index
-    @pokemon = Pokemon.all
+    @pokemon = Pokemon.includes(:toys).all
   end
 
   def show

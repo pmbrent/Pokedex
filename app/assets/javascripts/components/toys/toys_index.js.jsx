@@ -2,7 +2,7 @@ window.ToysIndex = React.createClass({
 
   render: function() {
 
-    if (typeof toys === "undefined") {
+    if (typeof this.props.toys === "undefined") {
       return <div></div>;
     }
 
@@ -10,9 +10,8 @@ window.ToysIndex = React.createClass({
       <div>
         {this.props.toys.map(function(toy) {
           return <ToyIndexItem toy={toy} />;
-        })};
+        })}
       </div>
-
     );
   }
 

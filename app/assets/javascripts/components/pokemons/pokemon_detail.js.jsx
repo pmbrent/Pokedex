@@ -35,6 +35,7 @@ window.PokemonDetail = React.createClass({
           <li>Defense: {this.state.pokemon.defense}</li>
           <li>Poke-Type: {this.state.poke_type}</li>
           <li>Moves: {this.state.pokemon.moves.join(", ")}</li>
+          <ToysIndex toys={this.state.pokemon.toys} />
         </ul>
       </div>);
     }
